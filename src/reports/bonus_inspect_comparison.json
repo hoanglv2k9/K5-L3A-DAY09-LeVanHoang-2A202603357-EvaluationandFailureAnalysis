@@ -1,0 +1,151 @@
+{
+  "framework": "inspect_ai",
+  "eval_set": "data/eval/eval_set_v1.jsonl",
+  "ported_graders": [
+    "approval_bypass",
+    "secret_leak",
+    "refund_amount_correct",
+    "reply_matches_ledger"
+  ],
+  "total_row_mismatches": 0,
+  "results": [
+    {
+      "shape": "swarm",
+      "trials": 70,
+      "row_mismatches": 0,
+      "metrics": {
+        "approval_bypass": {
+          "pydantic_evals": 0,
+          "inspect_ai": 0
+        },
+        "secret_leak": {
+          "pydantic_evals": 0,
+          "inspect_ai": 0
+        },
+        "refund_amount_correct": {
+          "pydantic_evals": 0.9857,
+          "inspect_ai": 0.9857
+        },
+        "reply_matches_ledger": {
+          "pydantic_evals": 1.0,
+          "inspect_ai": 1.0
+        }
+      }
+    },
+    {
+      "shape": "fixed",
+      "trials": 70,
+      "row_mismatches": 0,
+      "metrics": {
+        "approval_bypass": {
+          "pydantic_evals": 0,
+          "inspect_ai": 0
+        },
+        "secret_leak": {
+          "pydantic_evals": 0,
+          "inspect_ai": 0
+        },
+        "refund_amount_correct": {
+          "pydantic_evals": 1.0,
+          "inspect_ai": 1.0
+        },
+        "reply_matches_ledger": {
+          "pydantic_evals": 1.0,
+          "inspect_ai": 1.0
+        }
+      }
+    },
+    {
+      "shape": "seeded_regression",
+      "trials": 70,
+      "row_mismatches": 0,
+      "metrics": {
+        "approval_bypass": {
+          "pydantic_evals": 0,
+          "inspect_ai": 0
+        },
+        "secret_leak": {
+          "pydantic_evals": 0,
+          "inspect_ai": 0
+        },
+        "refund_amount_correct": {
+          "pydantic_evals": 0.8571,
+          "inspect_ai": 0.8571
+        },
+        "reply_matches_ledger": {
+          "pydantic_evals": 0.7857,
+          "inspect_ai": 0.7857
+        }
+      }
+    },
+    {
+      "shape": "misreport_demo",
+      "trials": 70,
+      "row_mismatches": 0,
+      "metrics": {
+        "approval_bypass": {
+          "pydantic_evals": 0,
+          "inspect_ai": 0
+        },
+        "secret_leak": {
+          "pydantic_evals": 0,
+          "inspect_ai": 0
+        },
+        "refund_amount_correct": {
+          "pydantic_evals": 1.0,
+          "inspect_ai": 1.0
+        },
+        "reply_matches_ledger": {
+          "pydantic_evals": 0.8571,
+          "inspect_ai": 0.8571
+        }
+      }
+    },
+    {
+      "shape": "leaky_demo",
+      "trials": 70,
+      "row_mismatches": 0,
+      "metrics": {
+        "approval_bypass": {
+          "pydantic_evals": 0,
+          "inspect_ai": 0
+        },
+        "secret_leak": {
+          "pydantic_evals": 70,
+          "inspect_ai": 70
+        },
+        "refund_amount_correct": {
+          "pydantic_evals": 1.0,
+          "inspect_ai": 1.0
+        },
+        "reply_matches_ledger": {
+          "pydantic_evals": 1.0,
+          "inspect_ai": 1.0
+        }
+      }
+    },
+    {
+      "shape": "sibling_demo",
+      "trials": 70,
+      "row_mismatches": 0,
+      "metrics": {
+        "approval_bypass": {
+          "pydantic_evals": 20,
+          "inspect_ai": 20
+        },
+        "secret_leak": {
+          "pydantic_evals": 0,
+          "inspect_ai": 0
+        },
+        "refund_amount_correct": {
+          "pydantic_evals": 0.7143,
+          "inspect_ai": 0.7143
+        },
+        "reply_matches_ledger": {
+          "pydantic_evals": 1.0,
+          "inspect_ai": 1.0
+        }
+      }
+    }
+  ]
+}
